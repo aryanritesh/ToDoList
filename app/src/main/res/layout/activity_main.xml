@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Task"
+            android:layout_width="280dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/input_bg"
+            android:ems="10"
+            android:fontFamily="@font/reem_kufi"
+            android:hint="Input task.."
+            android:inputType="textPersonName"
+            android:padding="4dp"
+            android:shadowColor="#8F71D8"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#6A51A6"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#866BC8"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_btn"
+            android:text="+"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_lv"
+        android:divider="@color/purple_200"
+        android:dividerHeight="2dp"
+        android:choiceMode="multipleChoice"
+
+        />
+
+
+</LinearLayout>
